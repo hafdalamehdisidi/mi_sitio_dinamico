@@ -18,7 +18,7 @@ $productos = [
   </thead>
   <tbody>
     <?php
-$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite"];
+$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite", "Vino de la tierra"];
 $i = 0;
 while ($i < count($productos)) {
     echo "<li class='list-group-item'>" . htmlspecialchars($productos[$i]) . "</li>";
