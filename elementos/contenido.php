@@ -17,13 +17,22 @@ $productos = [
     </tr>
   </thead>
   <tbody>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Producto</th>
+    </tr>
+  </thead>
+  <tbody>
     <?php
-$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite", "Vino de la tierra"];
-$i = 0;
-while ($i < count($productos)) {
-    echo "<li class='list-group-item'>" . htmlspecialchars($productos[$i]) . "</li>";
-    $i++;
-}
-?>
+    $productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite", "Vino de la tierra"];
+    $i = 0;
+    while ($i < count($productos)) {
+        echo "<tr><td>" . htmlspecialchars($productos[$i]) . "</td></tr>";
+        $i++;
+    }
+    ?>
+  </tbody>
+</table>
   </tbody>
 </table>
